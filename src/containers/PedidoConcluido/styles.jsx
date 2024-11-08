@@ -14,7 +14,7 @@ export const Container = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: url('${BackgroudSection}');
     opacity: 0.5;
     z-index: -1;

@@ -1,14 +1,13 @@
 import Categorias from '../../assets/categorias.svg';
-import { Container, Title, ImageCategorias, CategoriSection, ContainerTitle, SubTitle, Titles, EmptyMessage } from './favoritos-styles';
+import { Container, Title, ImageCategorias, CategoriSection, ContainerTitle, SubTitle, Titles, FavoriteContainer, EmptyMessage } from './favoritos-styles';
 import Header from '../../components/Header/header-index';
 import { useState, useEffect } from 'react';
 import api from '../../services/api';
 import CardProducts from '../../components/CardProducts';
-import { FavoriteContainer } from '../Products/products-styles';
 
 export default function Favoritos() {
-    const [products, setProducts] = useState([]); 
-    const [favoriteProducts, setFavoriteProducts] = useState([]);  
+    const [products, setProducts] = useState([]);
+    const [favoriteProducts, setFavoriteProducts] = useState([]);
 
     // Carregar todos os produtos e favoritos
     useEffect(() => {
